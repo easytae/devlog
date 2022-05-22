@@ -1,1 +1,0 @@
-# gilog.github.io
