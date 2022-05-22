@@ -1,0 +1,11 @@
+baseURL = 'http://gilog.github.io/'
+languageCode = 'ko-kr'
+title = '기록'
+theme = 'm10c'
+
+# enableGitInfo = true
+
+[params]
+  images = ['profile.webp']
+  title = '기록'
+  description = 'Text about my cool site'
