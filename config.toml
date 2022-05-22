@@ -6,6 +6,6 @@ theme = 'm10c'
 # enableGitInfo = true
 
 [params]
-  images = ['profile.webp', 'profile.png']
+  images = ['img/profile.webp', 'img/profile.png']
   title = '기록'
   description = 'no time to be busy'
