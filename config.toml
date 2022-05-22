@@ -6,6 +6,6 @@ theme = 'm10c'
 # enableGitInfo = true
 
 [params]
-  images = ['profile.webp']
+  images = ['profile.webp', 'profile.png']
   title = '기록'
-  description = 'Text about my cool site'
+  description = 'no time to be busy'
