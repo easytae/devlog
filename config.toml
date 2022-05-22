@@ -1,4 +1,4 @@
-baseURL = 'http://easytae.github.io/gilog'
+baseURL = 'https://easytae.github.io/gilog'
 languageCode = 'ko-kr'
 title = '기록'
 theme = 'm10c'
