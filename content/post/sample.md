@@ -1,7 +1,7 @@
-+++
-title = "Sample"
-date = "2014-04-01"
-+++
+---
+title: "Sample"
+date: "2014-04-01"
+---
 
 
 hohoho

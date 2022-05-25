@@ -1,10 +1,8 @@
-+++
-title = "Love is Death 만약에 제목이 너무나도 길다면 어떻게 되는지 확인하기 위한 테스트용 제목"
-tags = ["go", "golang", "hugo", "development", "tutorial", "docs", "configuration", "configuration1", "configuration2", "configuration3", "configuration4"]
-archives = ["한글", "go", "golang", "hugo", "development", "tutorial", "docs", "configuration", "configuration1"]
-packages = ["sample", "go", "golang", "hugo", "development", "tutorial", "docs", "configuration", "configuration1"]
-date = "2014-04-02"
-+++
+---
+title: "Love is Death 만약에 제목이 너무나도 길다면 어떻게 되는지 확인하기 위한 테스트용 제목"
+tags: ["go", "golang", "hugo", "development", "tutorial", "docs", "configuration", "configuration1", "configuration2", "configuration3", "configuration4"]
+date: "2014-04-02"
+---
 
 ## Step 1. Install Hugo
 

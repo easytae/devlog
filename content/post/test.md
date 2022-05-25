@@ -1,9 +1,8 @@
-+++
-title = "Test"
-date = "2022-05-01"
-lastmod = "2022-05-02"
-draft = false
-+++
+---
+title: "Test"
+date: "2022-05-01"
+draft: false
+---
 
 hatiho
 
