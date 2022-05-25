@@ -1,11 +1,14 @@
-baseURL = 'https://easytae.github.io/gilog'
+# baseURL = 'http://localhost:1313/'
+baseURL = 'https://easytae.github.io/devlog'
 languageCode = 'ko-kr'
-title = '기록'
+title = 'DevLog'
 theme = 'm10c'
 
-# enableGitInfo = true
+[taxonomies]
+  tag = 'tags'
 
 [params]
   images = ['img/profile.webp', 'img/profile.png']
-  title = '기록'
+  author = 'Lee Ji-Tae'
+  title = 'DevLog'
   description = 'no time to be busy'

@@ -1,6 +1,16 @@
 {{ define "main" }}
   <article>
-    <h1><a href="{{ .Site.BaseURL }}" />{{ .Site.Title }}</a> {{ if not .IsHome }} / tag: {{ .Title }} {{ end }}</h1>
+    <h1>
+      {{ if .IsHome }}
+        {{ .Site.Title }}
+      {{ else if .IsSection }}
+        <a href="{{ .Site.BaseURL }}" />{{ .Site.Title }}</a>
+        / {{ .Section }}
+      {{ else }}
+        <a href="{{ .Site.BaseURL }}" />{{ .Site.Title }}</a>
+        / <a href="{{ .Site.BaseURL }}{{.Section}}/" />{{ .Section }}</a>: {{ .Title }}
+      {{ end }}
+    </h1>
     <ul class="posts-list">
       {{ range where .Paginator.Pages "Type" "!=" "page" }}
         <li class="posts-list-item">

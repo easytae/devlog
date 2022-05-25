@@ -1,0 +1,33 @@
+{{ define "main" }}
+  <article>
+    <h1><a href="{{ .Site.BaseURL }}" />{{ .Site.Title }}</a> / {{ .Data.Plural }}</h1>
+
+    {{ $group := dict }}
+    {{ $terms := .Data.Terms }}
+    {{ range $name, $term := $terms }}
+      {{ $firstChar := upper (substr $name 0 1) }}
+      {{ $newList := slice }}
+      {{ with index $group $firstChar }}
+        {{ $newList = . | append $name }}
+      {{ else }}
+        {{ $newList = slice $name }}
+      {{ end }}
+      {{ $group = merge $group (dict $firstChar $newList) }}
+    {{ end }}
+
+    <ol class="term-list">
+      {{ range $firstChar, $list := $group }}
+        <li>
+          <strong>{{ $firstChar }}</strong>
+          <ul>
+            {{ range $item := $list }}
+              {{ with index $terms $item }}
+                <li><a class="tag" href="{{ .Page.Permalink }}">{{ $item }} [{{ .Count }}]</a></li>
+              {{ end }}
+            {{ end }}
+          </ul>
+        </li>
+      {{ end }}
+    </ol>
+  </article>
+{{ end }}
