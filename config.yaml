@@ -1,4 +1,3 @@
-#baseURL: 'http://localhost:1313/'
 baseURL: 'https://easytae.github.io/devlog/'
 languageCode: 'ko-kr'
 title: 'DevLog'
