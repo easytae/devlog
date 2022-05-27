@@ -11,3 +11,9 @@ params:
   author: 'Lee Ji-Tae'
   title: 'DevLog'
   description: 'no time to be busy'
+
+markup:
+  highlight:
+    guessSyntax: true
+    lineNos: true
+    lineNumbersInTable: false
